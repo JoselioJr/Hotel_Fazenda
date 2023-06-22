@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding-top: 160px;
+}
+
+#menu{
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: #3c3c3c;
+    justify-content: center;
+    padding: 10px;
+}
+
+#grid{
+    display: inline-flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tit{
+    display: flex;
+    float: left;
+    font-size: 25px;
+    align-items: center;
+    border-right: 2px solid #fff;
+    color: #fff;
+    padding: 20px;
+    height: 50px;
+    align-items: center;
+}
+
+#pesq{
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+#pesquisa{
+    padding: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#pPesquisa{
+    border-radius: 40px;
+    height: 30px;
+    color: #bdbdbd;
+    text-indent: 20px;
+}
+
+#naveg{
+    float: right;
+}
+
+#naveg ul{
+    border-left: 2px solid #fff;
+    display: inline-flex;
+    list-style-type: none;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+}
+
+#naveg li:hover > a{
+    background-color: #eee;
+    border-radius: 3px;
+    color: #3c3c3c;
+}
+
+#naveg li > a{
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#conteudo{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#img img{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.text h2{
+    font-size: 25px;
+}
+
+.text h3{
+    font-size: 19px;
+    text-indent: 13px;
+}
+
+.atrac{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.atrac img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.atrac img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+#rod{
+    width: 100%;
+    height: auto;
+    background-color: #3c3c3c;
+    padding: 10px;
+    justify-content: center;
+}
+
+#centt{
+    display: flex;
+    justify-content: center;
+}
+
+#plat{
+    width: 800px;
+}
+
+#plat img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+#cont{
+    margin-top: 40px;
+    margin-left: 600px;
+    width: 600px;
+    border-left: 1px solid #fff;
+    padding-left: 30px;
+    color: #fff;
+}
+
+#ass{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#ass p{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+@media (max-width: 1200px){
+
+    #plat{
+        display: none;
+    }
+
+    #cont{
+        display: none;
+    }
+
+    #ass{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1030px){
+
+    body{
+        padding-top: 230px;
+    }
+
+    #menu{
+        height: 220px;
+        padding: 10px;
+    }
+
+    #grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tit{
+        font-size: 17px;
+        border-right: none;
+        padding: 15px;
+        height: 20px;
+    }
+    
+    #pesq{
+        width: 450px;
+    }
+    
+    #pesquisa{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    #pPesquisa{
+        height: 25px;
+        text-indent: 20px;
+    }
+
+    #naveg ul{
+        border-left: none;
+        height: 10px;
+    }
+
+    #naveg li > a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 458px){
+
+    body{
+        padding-top: 150px;
+    }
+
+    #menu{
+        height: 140px;
+    }
+
+    #pesq{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+
+    .atrac {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}

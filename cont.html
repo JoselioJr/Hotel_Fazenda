@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Fazenda - Contato</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMAGENS/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header id="menu">
+        <div id="grid">
+            <div id="tit">
+                <h1>Hotel Fazenda</h1>
+            </div>
+            <div id="pesq">
+                <form id="pesquisa" method="get">
+                    <label>O'que procura?</label>
+                    <input type="text" name="tPesquisa" id="pPesquisa" size="60px" placeholder="Pesquisa">
+                </form>
+            </div>
+            <div id="naveg">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="cont.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <div id="conteudo">
+            <section id="contato">
+                <form id="f_contato" method="post" action="mailto:joselio.junior@estudante.ifgoiano.edu.br">
+                    <fieldset id="id_usuario">
+                        <legend>Identificação</legend>
+                        <p>
+                            <label for="cNome">Nome</label>
+                            <input type="text" name="tNome" id="cNome" size="40" maxlength="50" placeholder="Nome Completo">
+                        </p>
+                        <p>
+                            <label for="cEmail">E-mail</label>
+                            <input type="email" name="tEmail" id="cEmail" size="40" maxlength="40" min="5" placeholder="E-mail Válido">
+                        </p>
+                        <p>
+                            <label for="cData">Início da hospedagem</label>
+                            <input type="date" name="dData" id="cData">
+                        </p>
+                        <p>
+                            <label for="cData">Fim da hospedagem</label>
+                            <input type="date" name="dData" id="cData">
+                        </p>
+                        <p>
+                            <label for="cNum">Quantidade de hopedeiros:</label>
+                            <input type="number" name="nNum" id="cNum" min="0" max="30">
+                        </p>
+                    </fieldset>
+                    <fieldset id="end_usuario">
+                        <legend>Endereço</legend>
+    
+                        <p>
+                            <label for="cEst">Estado</label>
+                            <select name="tEst" id="cEst">
+                                <optgroup label="Centro-Oeste">
+                                    <option>Distrito Federeal</option>
+                                    <option selected>Goiás</option>
+                                    <option>Mato Grosso</option>
+                                    <option>Mato Grosso do Sul</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option>Paraná</option>
+                                    <option>Santa Catarina</option>
+                                    <option>Rio Grande do Sul</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="cCid">Cidade</label>
+                            <input type="text" name="tCid" id="cCid" size="34" maxlength="200" minlength="3" 
+                            placeholder="Sua cidade" list="cidades">
+                        </p>
+                        <datalist id="cidades">
+                            <option value="Morrinhos"></option>
+                            <option value="Caldas Novas"></option>
+                            <option value="Goiânia"></option>
+                            <option value="Goiatuba"></option>
+                            <option value="Rio Quente"></option>
+                            <option value="Piracanjuba"></option>
+                        </datalist>
+                        <p>
+                            <label for="cLog">Logradouro</label>
+                            <input type="text" name="tLog" id="cLog" size="30" maxlength="70" placeholder="Logradouro">
+                        </p>
+                        <p>
+                            <label for="cBai">Bairro</label>
+                            <input type="text" name="tBai" id="cBai" size="30" maxlength="70" placeholder="Bairro">
+                        </p>
+                        <p>
+                            <label for="cNum">Número</label>
+                            <input type="number" name="nNum" id="cNum" min="0" max="3000">
+                        </p>
+                        <p>
+                            <label for="cCom">Complemento</label>
+                            <input type="text" name="tCom" id="cCom" size="50" maxlength="70" placeholder="Bairro">
+                        </p>
+                    </fieldset>
+                    <fieldset id="msn_usuario">
+                        <legend>Escreva sua Mensagem</legend>
+                        <p>
+                            <label for="cMsn">Mesagem</label>
+                        </p>
+                        <textarea name="tMsn" id="cMsn" cols="40" rows="10"></textarea>
+                    </fieldset>
+    
+                    <fieldset id="opicionais">
+                        <legend>Opicionais</legend>
+                        <p>
+                            <input type="checkbox" name="cbSeg" id="cSeg">
+                            <label for="">Seguro Hospedagem?</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="cbEmail" id="cbxEmail" checked>
+                            <label for="">Deseja receber e-mail de confirmacão?</label>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <input type="submit" name="btnEnviar" id="btnEnviar">
+                    </p>
+                </form>
+            </section>
+        </div>
+    </article>
+
+    <footer id="rod">
+        <div>
+            <section id="centt">
+                <div>
+                    <div id="plat">
+                        <nav>
+                            <figure>
+                                <a target="_blank" href="https://www.facebook.com"><img src="IMAGENS/PLAT/facebook.png"
+                                        alt="Facebook"></a>
+                            </figure>
+                            <figure>
+                                <a target="_blank" href="https://www.instagram.com"><img src="IMAGENS/PLAT/instagram.png"
+                                        alt="INstagram"></a>
+                            </figure>
+                            <figure>
+                                <a target="_blank" href="https://www.tiktok.com/pt-BR"><img src="IMAGENS/PLAT/tiktok.png"
+                                        alt="Tiktok"></a>
+                            </figure>
+                            <figure>
+                                <a target="_blank" href="https://www.youtube.com"><img src="IMAGENS/PLAT/youtube.png"
+                                        alt="Youtube"></a>
+                            </figure>
+                        </nav>
+                    </div>
+                    <div id="cont">
+                        <h2>
+                            Base de contato
+                        </h2>
+
+                        <address>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fugit consectetur eaque
+                                obcaecati animi ad nam culpa similique molestiae saepe aperiam pariatur, consequatur voluptatem
+                                ut nesciunt sint. Eaque, facere dignissimos.
+                            </p>
+                            <p>
+                                Número: (64) 99999-0000
+                            </p>
+                            <p>
+                                E-mail: cxcxcxcx@gmail.com
+                            </p>
+                        </address>
+                    </div>
+                </div>
+            </section>
+            <section id="ass">
+                <p>
+                    &copy; Joselio Jr. - Todo o conteúdo deste site está protegido por direitos autorais e é propriedade
+                    exclusiva de seus respectivos autores.
+                    Qualquer uso não autorizado ou reprodução sem consentimento expresso é estritamente proibido. Respeite
+                    os direitos autorais e valorize o trabalho
+                    criativo dos artistas e produtores. Agradecemos sua cooperação e compreensão.
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
